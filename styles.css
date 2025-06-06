@@ -1,43 +1,43 @@
-*{
-    margin: 0;
+*{ /*Definições gerais de estilos*/
+    margin: 0; /**/
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;/*Fontes*/
 }
 
-body{
-    background-color: #fff;
-    color: #1a1a1a;
+body{ /*Corpo da página*/
+    background-color: #fff;/*Fundo branco*/
+    color: #1a1a1a;/*Letra preta*/
 }
 
-header{
+header{/*Cabeçalho*/
     background-color: #e0efff;
     padding: 16px;
     text-align: center;
     font-weight: bold;
 }
 
-main{
+main{/*Plataforma de feedback */
     display: flex;
-    justify-content: center;
+    justify-content: center; /*Centralização do texto*/
     padding: 40px 16px;
 }
-.feedback-box{
+.feedback-box{/*Caixa de feedback*/
     max-width: 700px;
     width: 100%;
 }
 
-.feedback-box h2{
+.feedback-box h2{ /*Texto head feedback*/
     font-size: 1.5rem;
     margin-bottom: 8px;
 }
 
-.feedback-box p{
+.feedback-box p{ /*Texto p feedback*/
     color: #777;
     margin-bottom: 24px;
 }
 
-form .question{
+form .question{ /*Caixa texto "baixo"*/
     margin-bottom: 24px;
 }
 
@@ -47,12 +47,12 @@ form label{
     margin-bottom: 8px;
 }
 
-.options{
+.options{ /*Opções*/
     display: flex;
     gap: 12px;
 }
 
-.options button{
+.options button{ /*Botão de opções*/
     background-color: #f0f0f0;
     border: none;
     padding: 10px 16px;
@@ -80,7 +80,7 @@ textarea{
     resize: vertical;
 }
 
-.submit-btn{
+.submit-btn{ /*Parte de submit*/
     width: 100%;
     background-color: #007aff;
     color: white;
