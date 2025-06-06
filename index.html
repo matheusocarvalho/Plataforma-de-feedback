@@ -5,7 +5,7 @@
   <script src="feedback.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Plataforma de feedback</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
@@ -14,12 +14,12 @@
 
   <main>
     <section class="feedback-box">
-      <h2>Faça os comentários sobre o AVA</h2>
+      <h2>Faça os comentários sobre o AVA da FeMASS</h2>
       <p>Use essa página para fazer comentários sobre o sistema do aluno da FeMASS.</p>
 
       <form name="area">
         <div class="question">
-          <label>Você acredita que o AVA da FeMASS e bem construído em questão de usabilidade?</label>
+          <label>Como você avalia a usabilidade geral do AVA?</label>
           <div class="options">
             <input type="button" value="PÉSSIMO" onclick="escreve('PÉSSIMO', 'resposta1')" />
             <input type="button" value="REGULAR" onclick="escreve('REGULAR', 'resposta1')" />
@@ -29,7 +29,7 @@
         </div>
 
         <div class="question">
-          <label>Qual a qualidade de realizar entregas de trabalho através do sistema da FeMASS?</label>
+          <label>Como você avaliaria o módulo de entrega de exercícios do AVA?</label>
           <div class="options">
             <input type="button" value="PÉSSIMO" onclick="escreve('PÉSSIMO', 'resposta2')" />
             <input type="button" value="REGULAR" onclick="escreve('REGULAR', 'resposta2')" />
@@ -39,7 +39,7 @@
         </div>
 
         <div class="question">
-          <label for="extra">Tem algum comentário extra?</label>
+          <label for="extra">Caso possua algum feeback extra, favor preencher abaixo:</label>
           <textarea id="extra" placeholder="Descreva mais detalhes."></textarea>
         </div>
 
