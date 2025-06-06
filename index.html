@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <script src="feedback.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plataforma de feedback</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Plataforma de feedback</h1>
+  </header>
+
+  <main>
+    <section class="feedback-box">
+      <h2>Faça os comentários sobre o AVA da FeMASS</h2>
+      <p>Use essa página para fazer comentários sobre o sistema do aluno da FeMASS.</p>
+
+      <form name="area">
+        <div class="question">
+          <label>Como você avalia a usabilidade geral do AVA?</label>
+          <div class="options">
+            <input type="button" value="PÉSSIMO" onclick="escreve('PÉSSIMO', 'resposta1')" />
+            <input type="button" value="REGULAR" onclick="escreve('REGULAR', 'resposta1')" />
+            <input type="button" value="ÓTIMO" onclick="escreve('ÓTIMO', 'resposta1')" />
+          </div>
+          <input type="text" id="resposta1" readonly />
+        </div>
+
+        <div class="question">
+          <label>Como você avaliaria o módulo de entrega de exercícios do AVA?</label>
+          <div class="options">
+            <input type="button" value="PÉSSIMO" onclick="escreve('PÉSSIMO', 'resposta2')" />
+            <input type="button" value="REGULAR" onclick="escreve('REGULAR', 'resposta2')" />
+            <input type="button" value="ÓTIMO" onclick="escreve('ÓTIMO', 'resposta2')" />
+          </div>
+          <input type="text" id="resposta2" readonly />
+        </div>
+
+        <div class="question">
+          <label for="extra">Caso possua algum feeback extra, favor preencher abaixo:</label>
+          <textarea id="extra" placeholder="Descreva mais detalhes."></textarea>
+        </div>
+
+        <input type="button" class="submit-btn" value="Enviar Feedback" onclick="enviarFeedback()" />
+      </form>
+    </section>
+  </main>
+</body>
+</html>
